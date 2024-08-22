@@ -1,0 +1,33 @@
+*, *::before, *::after{
+        box-sizing: border-box;
+        margin :0;
+        padding :0;
+}
+
+
+body{
+      font-family: "New Amsterdam", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      
+}
+header{
+        padding-top:10px;
+        padding-bottom: 1000px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1440px;
+        margin: auto;
+        border-bottom: 10 px solid rgba(0,0,0,1);
+      .logo-holder{
+          .logo{
+
+          }
+          .logo-name{
+
+          }
+      }  
+      /* #Menu{
+
+      } */
+}
