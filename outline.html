@@ -6,33 +6,82 @@
     <title>Portfolio Web Design</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel=" stylesheet" href="./style.css">
     <script src = "./script.js"> </script>
     <link rel = "icon" type = "image/png" href = "./photo/css.png">
 </head>
 <body>
-   <head>
-    <a herf="#" class = "logo-holder">
-       <div class="logo"> K </div>
+   <header>
+    <a href="#" class = "logo-holder">
+       <!-- <div class="logo"> K </div> -->
        <div class ="logo-name"> Kim's Portfolio</div>
     </a>
     <nav>
         <ul id = "Menu">
             <li>
-               <a href = "#">Home </a>
+               <a href = "#">Home</a>
             </li>
             <li>
-                <a href = "#"> Skills</a>
+                <a href = "#">Skills</a>
             </li>
             <li>
-                <a href = "#">Project </a>
+                <a href = "#">Projects</a>
             </li>
             <li>
                 <a href = "#">Contact me</a>
             </li>
         </ul>
+        <a href = "#" class ="mobile-toggle" onClick = "toggleMobileMenu()"> 
+        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+          </svg>
+        </a>
     </nav>
-   </head>
+   </header>
+     <main>
+        <section class="hero-container">
+            <div class = textAboutMe>
+                <h1>Hello, I'm Kim Chhorn Sambath</h1>
+                <p>I am a dedicated computer science student with a passion for technology 
+                    and problem-solving. My academic journey has equipped me 
+                    with a strong foundation in programming, algorithms, and software development.
+                     I am particularly interested in areas like [insert your specific interests, 
+                     e.g., artificial intelligence, web development, data science, etc.], 
+                     where I can apply my skills to create innovative solutions. </p>
+                <div class = "call-to-action">
+                    <a href="#" class="button">
+                        View Resume
+                    </a>
+                    <a href="#" class="button">
+                        Contact me
+                    </a>
+                </div>
+                <div class = "social">
+                  <div class = "githubIcon">
+                    <a href="#">
+                        <img src ="./photo/github.png" 
+                        alt="github" 
+                        width="32"/>
+                    </a>
+                  </div>
+                  <div class = "linkedinIcon">
+                    <a href="#" >
+                        <img src ="./photo/linkedin.png"
+                        alt = "linkedin" 
+                        width="32"/>
+                    </a>
+                  </div>
+                </div>
+            </div>
+            <div class="myPhoto">
+                <img src ="./photo/kimchhorn-Photo-removebg.png"
+                alt = "Kim's Photo" width="100%"  style="border-radius: 5%;"/>
+
+            </div>
+         
+        </section>
+     </main>
+
 </body>
 </html>
