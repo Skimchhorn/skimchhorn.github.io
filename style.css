@@ -9,7 +9,7 @@
     --base-200: #555;
     --base: #f1f1f1;
     --base-100: #000;
-    --red: #ff0000;
+    --red:  #FF0000;
     --red-100: #fa8368;
     --red-800:#78281f;
     --blue: #0a61ae;
@@ -58,11 +58,11 @@ header{
             flex:1;
             padding: 10px;
             margin-left:15px;
-            border: 1.6px solid rgb(249, 6, 6);
+            border: 1.6px solid red;
             border-radius:10px;
             /* text-decoration: none; */
              &:hover{
-                background-color:rgb(249, 6, 6);
+                background-color:red;
                 
              }
            } 
@@ -144,34 +144,55 @@ header{
      gap: 10px;
      height: auto;
      width: 100%;
+     @media(max-width: 1440px){
+      padding-left:20px;
+      padding-right:20px;
+    }
+    /* @media(max-width: 1048px){
+       flex-direction: column;
+    } */
      .textAboutMe{
-        flex:1;
+        flex:2;
         display:flex;
-        /* display:inline-block; */
-        /* background-color: var(--base-200); */
-        /* background-color: var(--base-200); */
         padding : 23px;
-        border-top-left-radius: 20%;
-        border-top-right-radius: 20%;
+        border-radius: 50px;
         border-bottom-right-radius: 5%;
         border-bottom-left-radius: 5%;
         flex-direction: column;
         justify-content: center;
-
-        font-size: 15px;
+        font-size: 30px;
         border: 1.6px solid #fcfbfb;
-        
-        .call-to-action{
-
+         @media(max-width: 1048px){
+         font-size: 20px;
         }
+         @media(max-width: 768px){
+            font-size: 15px;
+          }
+       .call-to-action{
+           margin-top: 5px;
+           .button{
+              display: inline-block;
+              padding: 3px 10px;
+              margin-right: 10px;
+              background-color: var(--red);
+              border-radius: 10px;
+              transition: ease 0.3s all;
+            }
+           a{
+               &:hover{
+                background-color: var(--base-100);    
+               }
+            }
+         }
+      }
         .social{
                 display: flex;
                 margin-top: 10px;
-                flex-direction: row;
-                background-color: #ba7979;
+                width: auto;
+                height: auto;
+                
                 width: 70px;
                 .githubIcon{
-                   /* display: block; */
                    background-color: #fcfbfb;
                    border-radius: 50%;
                    width:30px;
@@ -184,8 +205,8 @@ header{
                         display :inline-block;
                         background-color: #0663f9;
                         border-radius: 50%;
-                        width:30px;
-                        height:30px;
+                        width:32px;
+                        height:32px;
                         margin-left: 5px;
 /*  
                         img{
@@ -195,21 +216,23 @@ header{
                  }
 
                 }
-     }
+     
      .myPhoto{
+        
         flex:1;
         width: 100%;
         height: auto;
-        background-color: var(--base-200);
-        border-top-left-radius: 20%;
-        border-top-right-radius: 20%;
+        background-color: #000;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
         border-bottom-right-radius: 5%;
         border-bottom-left-radius: 5%;
         display:flex;
         border: 1.6px solid #fcfbfb;
-        justify-content: center;
+        flex-direction: column;
+        justify-content:flex-end;
       
-        img{
+        img{    
                 margin-top: -20px;
                 width: 100%;
                 height: auto;
@@ -218,4 +241,4 @@ header{
         }
 
      }
- }
+   }
