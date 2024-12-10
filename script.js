@@ -1,4 +1,5 @@
 function toggleMobileMenu(){
-    document.getElementById("Menu").classList.toggle("action");
+    document.getElementById("Menu-holder").classList.toggle("action");
+    event.preventDefault();
 }
-console.log('kim');
+// console.log('kim');

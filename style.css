@@ -24,12 +24,26 @@ body{
         
       
 }
+section{
+   scroll-margin-top: 120px;
+   @media(max-width: 1024px){
+      scroll-margin-top: 200px;
+     }
+   @media(max-width: 768px){
+      scroll-margin-top: 400px;
+     }
+}
 a{
    text-decoration: none;
 
    }   
 
-header{
+header{  
+        
+        position: sticky;
+        top: 0px;
+        z-index: 1000;
+        background-color: #000;
         padding-top:10px;
         padding-bottom: 10px;
         display: flex;
@@ -68,6 +82,7 @@ header{
            } 
         }
         nav{
+          
           display:flex;
           align-items: center;
           ul{
@@ -78,7 +93,9 @@ header{
              font-size:25px;
              li{
                 display: inline-block;
+                
                 a{ 
+                  color: white;
                   display: inline-block;
                   padding: 10px 20px;
                   &:hover{
@@ -139,15 +156,17 @@ header{
 h1{
    font-size:32px;
 }
-.call-to-action{
+.contact{
    margin-top: 5px;
-   .button{
+   
+   .button-contact{
       display: inline-block;
       padding: 3px 10px;
       margin-right: 10px;
       background-color: var(--red);
       border-radius: 10px;
       transition: ease 0.3s all;
+      color: white;
     }
    a{
        &:hover{
@@ -191,8 +210,10 @@ h1{
 
    }
 .hero-container{
+     position: relative;
      max-width: 1440px;
-     margin:auto;
+     padding-top: 100px;
+     margin: auto;
      display:flex;
      padding : 10px;
      gap: 10px;
@@ -287,7 +308,7 @@ h1{
 
       }
 
-      .call-to-action{
+      .contact{
          display: none;
          font-size: 19px;
          @media(max-width: 768px){
@@ -307,16 +328,19 @@ h1{
       display:flex;
       padding: 30px 0;
       width: 100%;
-      margin:0 auto ;
+      /* margin:0 auto ; */
       justify-content: center;
+      /* @media(max-width: 768px){
+         size
+        } */
       .marquee{
-        
          width:100vw;
          max-width: 1440px;
          height: 120px;
          overflow:hidden;
          position:relative;
-         
+         @media(max-width: 768px){
+         margin-bottom: -50px;}
          .track{
           position: absolute;
           white-space:nowrap;
@@ -324,20 +348,72 @@ h1{
           animation: marquee 30s linear infinite;
           display:flex;
           gap:10px;
-         
+          @media(max-width: 768px){
+            
+            height: 70px;
+            width: 70px;
+            animation: marquee 5s linear infinite;
+            
+            /* @keyframes marquee{
+               0%{
+                  transform: translateX(0);
+               }
+               100%{
+                  transform: translateX(-50%);
+               } */
+              }
+           } 
          }
+
       }
 
-     }
+     
+   
      @keyframes marquee{
       0%{
          transform: translateX(0);
       }
       100%{
-         transform: translateX(-40%);
+         transform: translateX(-50%);
       }
      }
-     .updated{
-       text-align: center;
-       margin: 50px;
+     .skill{
+      max-width: 100%;
+      /* background-color: white; */
+      display: flex;
+      justify-content: center;
+      margin:0 auto ;
+      margin-bottom: 20px ;
      }
+     .project-holder {
+       
+       /* background-color: white; */
+       display: grid;
+       max-width:1440px;
+       width:100vw;
+       gap: auto;
+       row-gap: 40px;
+       padding-left: 60px;
+       width: 100%; 
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 1fr 1fr ;
+      @media (min-width: 1400px){
+         padding-left: 110px;
+      }
+      /* @media (min-width: 1100px){
+         padding-left: 30px;
+      } */
+       @media (max-width: 960px){
+         padding-left: 50px;
+         grid-template-columns: 1fr 1fr ;
+         grid-template-rows: 1fr 1fr ;
+       }
+       @media (max-width: 650px){
+         grid-template-columns: 1fr ;
+         grid-template-rows: 1fr  ;
+       }
+     }
+   .headline{
+      margin-bottom: 20px ;
+   }
+   
