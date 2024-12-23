@@ -3,3 +3,4 @@ function toggleMobileMenu(){
     event.preventDefault();
 }
 // console.log('kim');
+// document.querySelector(#hero) ;
