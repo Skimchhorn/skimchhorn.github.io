@@ -412,23 +412,20 @@ h1{
        }
      }
    .headline {
-      margin-left: -10px;
+      margin-left: 10px;
       border-left: 4px solid red;
       padding: 10px 12px 14px;
     }
-    /* .headline {
-      margin-left: 10px !important;
-      border-left: 4px solid var(--accent) !important;
-      padding: 10px 12px 10px !important;
-    } */
+
    .timeline {
       --background: #0a0f2b;
       --accent: var(--red);
       --text: white;
       --line: #c4c4c4;
-      /* background: var(--background); */
       color: var(--text);
       padding: 30px;
+      margin : 0 auto;
+      max-width: 1440px;
 
     }
     
@@ -468,7 +465,7 @@ h1{
       transform: translateY(-50%);
       margin-top: 1px;
       right: -15px;
-      font-size: 20px;
+      font-size: 30px;
       color: var(--accent);
     }
     
@@ -478,6 +475,9 @@ h1{
       overflow: hidden;
       position: relative;
       height: calc(100% + var(--circle-size) * 0.5);
+      p{
+        font-size: 20px;
+      }
     }
     
     .timeline ul li:after {
