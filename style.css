@@ -416,6 +416,9 @@ h1{
       border-left: 4px solid red;
       padding: 10px 12px 14px;
     }
+    .timeline .headline{
+      margin-left:-10px;
+    }
 
    .timeline {
       --background: #0a0f2b;
