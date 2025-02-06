@@ -361,6 +361,29 @@ h1{
          grid-template-rows: 1fr  ;
        }
      }
+     .extracurricular-holder {
+      display: grid;
+      max-width:1440px;
+      width:100vw;
+      gap: auto;
+      row-gap: 40px;
+      padding-left: 60px;
+      width: 100%; 
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr  ;
+      @media (min-width: 1400px){
+        padding-left: 110px;
+     }
+      @media (max-width: 960px){
+        padding-left: 50px;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+      }
+      @media (max-width: 650px){
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr  ;
+      }
+    }
    .headline {
       margin-left: 10px;
       border-left: 4px solid red;
