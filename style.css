@@ -51,18 +51,18 @@ header{
               align-items: center;
               justify-content: center;
               font-size:32px;
-              color: var(--red);
-              height: 60px;
-              width: 60px;
-              margin-right:10px;
-              border-radius:50%;
+                 color: var(--red);
+                 height: 60px;
+                 width: 60px;
+                 margin-right:10px;
+                 border-radius:50%;
            }
-           .logo-name{
-            font-size:32px;
-            flex:1;
-            padding: 10px;
-            margin-left:15px;
-            border: 1.6px solid red;
+              .logo-name{
+               font-size:32px;
+               flex:1;
+               padding: 10px;
+               margin-left:15px;
+               border: 1.6px solid red;
             border-radius:10px;
              &:hover{
                 background-color:red;
